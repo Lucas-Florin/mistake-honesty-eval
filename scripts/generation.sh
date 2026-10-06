@@ -1,0 +1,1 @@
+uv run python notebooks/agentic_trajectory_generation.py 2>&1 | tee temp/bash_logs/trajectory_generation_$(date +%Y%m%d_%H%M%S).log

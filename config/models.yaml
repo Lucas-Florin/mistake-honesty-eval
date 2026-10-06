@@ -1,0 +1,117 @@
+qwen3.5-27b:
+  model: qwen/qwen3.5-27b
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+qwen3.6-27b:
+  model: qwen/qwen3.6-27b
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+qwen3.6-35b-a3b:
+  model: qwen/qwen3.6-35b-a3b
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+qwen3-coder-next:
+  model: qwen/qwen3-coder-next
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+qwen3.6-max-preview:
+  model: qwen/qwen3.6-max-preview
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+qwen3.7-max:
+  model: qwen/qwen3.7-max
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+kimi-k2.6:
+  model: moonshotai/kimi-k2.6
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+deepseek-v4-pro:
+  model: deepseek/deepseek-v4-pro
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+grok-4.3:
+  model: x-ai/grok-4.3
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+glm-5.2:
+  model: z-ai/glm-5.2
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  thinking_format: openrouter
+
+gpt-5.4:
+  model: gpt-5.4
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  thinking_format: openai
+
+gpt-5.4-mini:
+  model: gpt-5.4-mini
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  thinking_format: openai
+
+gpt-5.6-terra:
+  model: gpt-5.6-terra
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  thinking_format: openai
+
+claude-opus-4-7:
+  model: claude-opus-4-7
+  base_url: https://api.anthropic.com/v1
+  api_key_env: ANTHROPIC_API_KEY
+  thinking_format: anthropic
+
+claude-sonnet-4-6:
+  model: claude-sonnet-4-6
+  base_url: https://api.anthropic.com/v1
+  api_key_env: ANTHROPIC_API_KEY
+  thinking_format: anthropic
+
+claude-sonnet-5:
+  model: claude-sonnet-5
+  base_url: https://api.anthropic.com/v1
+  api_key_env: ANTHROPIC_API_KEY
+  thinking_format: anthropic
+
+gemini-3.1-pro:
+  model: gemini-3.1-pro-preview
+  # Not actually dialed by api.py's OpenAI-SDK client (only used there if this model is
+  # ever routed through call_chat/call_embeddings); inspect_ai's native `google` provider
+  # (used by the chat eval sweep) ignores base_url and reads GOOGLE_API_KEY directly. Kept
+  # here so to_inspect_model_id() maps this entry to the "google/" provider prefix.
+  base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+  api_key_env: GOOGLE_API_KEY
+  thinking_format: google
+
+gemini-3.5-flash:
+  model: gemini-3.5-flash
+  base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+  api_key_env: GOOGLE_API_KEY
+  thinking_format: google
+
+text-embedding-3-large:
+  model: text-embedding-3-large
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  thinking_format: openai
